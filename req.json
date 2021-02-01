@@ -1,0 +1,43 @@
+{
+    "tittle": "String",
+    "estimation": "String",
+    "state": {
+        "date": "20/02/2020",
+        "status": "accepted"
+    },
+    "card": {
+        "description": "Bu öğe aslında kullanıcı hikayesinin kendisidir. Kullanıcı hikayesinin detay içermemesi gerekir. Kart gereksinimle ilgili detay içermemelidir. Sadece gereksinim tanımlanmalı ve hikayenin takım için bir hatırlatıcı nitelikte olması istenir. ",
+        "who": "String",
+        "what": "String",
+        "why": "String",
+        "priority": "String",
+        "time_bound": "20/02/2021"
+    },
+    "confirmation": {
+        "creator": "String",
+        "approver": "String",
+        "date": "20/02/2020",
+        "note": "String"
+    },
+    "independent": {
+        "description": "Kullanıcı hikayeleriyle çalışmanın kolay yollarından biri, o hikayenin bağımsız olmasıdır. Hikayeler arasındaki bağımlılıklar önceliklendirme ve planlama problemlerine yol açar. Örneğin müşterinin yüksek öncelik verdiği bir hikaye düşük öncelik verilmiş bir hikayeye bağımlı olursa, hangisini önce yapılacağına karar verilmesi oldukça güç olacaktır.",
+        "way": "Bağımlı kullanıcı hikayelerini bağımsız hale getirmenin birkaç yolu var. Bunlardan biri bağımlı olan hikayeleri birleştirmek. Ama bu birleşimden oluşan yeni hikaye çok büyük olmayacaksa tabii.",
+        "exception": "Eğer bağımlı hikayeleri birleştirmek istemiyorsanız da bu sefer farklı bakış açılarıyla yeni hikayeler yazmak gerekir.",
+        "state": true
+    },
+    "small": {
+        "description": "Bir kullanıcı hikayesinin büyüklüğü, planlama ve tahminleme yapabilmek için önemli bir parametredir. Bu yüzden bir kullanıcı hikayesi, bir iterasyon içinde tamamlanabilecek kadar küçük olmalıdır.",
+        "state": true
+    },
+    "acceptance_criteria": [],
+    "detailed_appropriately": {
+        "description": "Bir ürün iş listesinde üstte olan kullanıcı hikayeleri ilk geliştirilecek hikayelerdir. Bu yüzden bu hikayeler, ekibin anlayabilmesi ve büyüklüğünü ölçümleyebilmesi için yeteri kadar detaylandırılmalıdır. Yeteri kadar dememin bir sebebi var. Her şeyin en ince detayına kadar açıklanması değil de geliştirici ekibin ölçümleyebilmesi ve planlayabilmesine imkan sağlayacak kadar detaylandırılmış olması yeterlidir.",
+        "input": "String",
+        "output": "String",
+        "data_source": "String",
+        "formula": "String",
+        "internal_apis": ["internal/api/1"],
+        "external_apis": ["external/api/1"]
+    },
+    "resources": []
+}
