@@ -1,2 +1,5 @@
 https://builttoadapt.io/what-my-backend-and-api-user-stories-look-like-c5e965beb778
 http://www.ilkimdilara.com/kullanici-hikayesi-yazma-kilavuzu/
+https://sameera17w.medium.com/how-to-write-a-user-story-for-an-api-product-7af6abd4ad2e
+
+echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'admin@myproject.com', 'admin')" | python manage.py shell
