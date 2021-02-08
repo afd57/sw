@@ -19,32 +19,29 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8">
-        <h1 class="mt-5">Stor Title</h1>
+        <h2 class="mt-5">Get the information about shops nearby a location</h2>
         <hr class="mt-0 mb-4">
         <table id="vertical-1" class="table">
           <tr>
             <th>Story Type</th>
-            <td>data</td>
-            <td>data</td>
-            <td>data</td>
+            <td>New Feature <i class="glyphicon glyphicon-thumbs-up"></i></td> 
+            
           </tr>
           <tr>
             <th>Priority</th>
-            <td>data</td>
-            <td>data</td>
-            <td>data</td>
+            <td>0</td>
           </tr>
           <tr>
             <th>Time Bound</th>
-            <td>data</td>
-            <td>data</td>
-            <td>data</td>
+            <td>22.03.2021</td>
           </tr>
           <tr>
             <th>Author</th>
-            <td>data</td>
-            <td>data</td>
-            <td>data</td>
+            <td>Ahmet</td>
+          </tr>
+          <tr>
+            <th>Approver</th>
+            <td>Onur</td>
           </tr>
         </table>
         {% block content %}
@@ -53,33 +50,77 @@
     </div>
 
     <div class="row justify-content-center">
-      <div class="col-8 border border-secondary">
-        <h3>Card</h3>
-        <div id="card-content">
-          <b>Who</b>
-          <p>As a developer who uses the ABC cloud platform to build applications,</p>
-          <b>What</b>
-          <p>I want to fetch the information about nearby shops via an API when I send lat-lon of a location,</p>
-          <b>So that</b>
-          <p>So that I do not have to manually search for shops nearby a particular location when building my
-            application.</p>
+      <div class="col-8">
+        <div class="panel panel-default">
+          <div class="panel-heading">Card</div>
+          <div class="panel-body">
+            <b>Who</b>
+            <p>As a developer who uses the ABC cloud platform to build applications,</p>
+            <b>What</b>
+            <p>I want to fetch the information about nearby shops via an API when I send lat-lon of a location,</p>
+            <b>So that</b>
+            <p>So that I do not have to manually search for shops nearby a particular location when building my
+              application.</p>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-8 border border-secondary">
         <div class="panel panel-default">
           <div class="panel-heading">Endpoint</div>
           <div class="panel-body">/v2/near/store</div>
         </div>
         <div class="panel panel-default">
-          <div class="panel-heading">Input</div>
-          <div class="panel-body">Query String coordinate</div>
+          <div class="panel-heading">Detailed Appropriately</div>
+          <div class="panel-body"> 
+            <div class="panel panel-default">
+              <div class="panel-heading">Description</div>
+              <div class="panel-body">Query String coordinate</div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">Input</div>
+              <div class="panel-body">Query String coordinate</div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">Output</div>
+              <div class="panel-body">{"result":["a", "b"]}</div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">Data Source</div>
+              <div class="panel-body">Google API</div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">Formula</div>
+              <div class="panel-body">{"result":["a", "b"]}</div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">Internal API</div>
+              <div class="panel-body">{"result":["a", "b"]}</div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">External API</div>
+              <div class="panel-body">{"result":["a", "b"]}</div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">Authentication</div>
+              <div class="panel-body">{"result":["a", "b"]}</div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">Max Response Time:</div>
+              <div class="panel-body">{"result":["a", "b"]}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">Acceptance Criteria</div>
+          <div class="panel-body">
+            <ul>
+              <li>Should be able to send latitude and longitude in the API request. These fields are mandatory.</li>
+              <li>Should return a list of shop names with the total number of shops available for the requested lat-lon. Should not send additional description about shops.</li>
+            </ul>
+          </div>
         </div>
         <div class="panel panel-default">
-          <div class="panel-heading">Output</div>
-          <div class="panel-body">{"result":["a", "b"]}</div>
+          <div class="panel-heading">Resources</div>
+          <div class="panel-body">/v2/near/store</div>
         </div>
       </div>
     </div>
