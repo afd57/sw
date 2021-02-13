@@ -1,15 +1,14 @@
 from django.contrib import admin
 from sw_app.models import Story, Card, Confirmation, Independent, DetailedAppropriately
-from sw_app.models import Resource, AcceptanceCriteria
+from sw_app.models import Resource, AcceptanceCriteria, Epic
 # Register your models here.
 
-# admin.site.register(Author)
+admin.site.register(Epic)
 # admin.site.register(Story)
 
 # @admin.register(Book)
 # class BookAdmin(admin.ModelAdmin):
 #     inlines = [BooksInstanceInline]
-
 
 class ResourceInline(admin.StackedInline):
     model = Resource
